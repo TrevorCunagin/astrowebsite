@@ -1,9 +1,5 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# About Me
+Hi, my name's Trevor. I was born and raised in Kentucky, and am proudly Appalachian. I have a bachelor's degree in Computer Science and work as a software developer. I'm also a nerd with an interest in video games, old tech, movies, and cooking, among others. On this blog, I'll be sharing my perspective on my career, my life, and my interests. I hope that you'll find something interesting here.
 
-::github{repo="saicaca/fuwari"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+The starry gif comes from a JS app that generates _EarthBound_ battle backgrounds that you can find [here](https://www.gjtorikian.com/Earthbound-Battle-Backgrounds-JS/). You should also play _EarthBound_ right now if you haven't already. 
