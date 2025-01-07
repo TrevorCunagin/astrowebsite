@@ -54,7 +54,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/star_gif.gif',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Trevor Cunagin',
-  bio: "I'm a software developer and media enthusiast with experience in full-stack development. I hope you'll enjoy some of my thoughts here.",
+  bio: "I'm a software developer and media enthusiast from Kentucky. I hope you'll enjoy some of my thoughts here.",
   links: [
     {
       name: 'LinkedIn',
