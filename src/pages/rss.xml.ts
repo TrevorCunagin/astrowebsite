@@ -12,8 +12,8 @@ export async function GET(context: APIContext) {
 
   return rss({
     title: siteConfig.title,
-    description: siteConfig.subtitle || 'No description',
-    site: context.site ?? 'https://fuwari.vercel.app',
+    description: siteConfig.subtitle || 'Blog for Trevor Cunagin',
+    site: context.site ?? 'https://trevorcunagin.com',
     items: blog.map(post => {
       return {
         title: post.data.title,
