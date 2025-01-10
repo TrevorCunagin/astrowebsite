@@ -5,7 +5,6 @@ import License from '@components/misc/License.astro'
 import Markdown from '@components/misc/Markdown.astro'
 import I18nKey from '@i18n/i18nKey'
 import { i18n } from '@i18n/translation'
-import JamComments from '@jam-comments/astro'
 import MainGridLayout from '@layouts/MainGridLayout.astro'
 import { getDir, getPostUrlBySlug } from '@utils/url-utils'
 import { Icon } from 'astro-icon/components'
@@ -30,8 +29,6 @@ const BUTTONS = [
   MediumShareButton,
   RedditShareButton,
 ]
-
-const path2 = new URL(Astro.request.url).pathname
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('posts', ({ data }) => {
@@ -155,76 +152,23 @@ const jsonLd = {
         
               
               
-              <JamComments
-              path={path2}
-              apiKey="322|AnKFQLxS7uzp90wNmWqQVCGUJ4K4j9qAFhtlnpy709f77269"
-              domain="www.trevorcunagin.com"
-              environment="production"
-              tz="America/Chicago"
-              
-              
-            />
-            
-            <slot name="jc-shell-css">
-                <style is:global>
-                    div.jc-CommentBox {
-                        border-color:transparent;
-                        color: #d1d5db;
-                        width:98%;
-                        margin-left:1%;
-
-                    }
-                    button.jc-CommentBox-button {
-                        border: 2px solid;
-                        border-color:#d1d5db;
-                        border-radius: 5px;
-                        padding: 10px 20px;
-                    }
-                    div.jc-CommentBox-belowCommentWrapper {
-                        display:none;
-                    }
-                    li.jc-Editor-tab.is-selected {
-                        border-color: oklch(0.75 0.14 var(--hue));
-                    }
-                    li.jc-Editor-tab {
-                        border-color: #181e24;
-                    }
-                    li.jc-Editor-tab:hover {}
-                    button.jc-Editor-tabButton {
-                        background-color: #181e24;
-                        color: #d1d5db;
-                    }
-                    div.jc-CommentBox-inputWrapper {
-                        padding-top: 15px;
-                    }
-                    label.jc-CommentBox-label:nth-child(3) {
-                        background-color: #24292f;
-                        border-radius: 5px;
-                    }
-                    label.jc-CommentBox-label:nth-child(3) > textarea:nth-child(1) {
-                        border-color:transparent;
-                        background-color: #24292f;
-                    }
-                    label.jc-CommentBox-label:nth-child(1) > input:nth-child(1) {
-                        border-color:transparent;
-                        background-color: #24292f;
-                    }
-                    label.jc-CommentBox-label:nth-child(2) > input:nth-child(1) {
-                        border-color:transparent;
-                        background-color: #24292f;
-                    }
-                    .jc-CommentBox-attribution {
-                        display:none;
-                    }
-                    .jc-Auth {
-                        display: none;
-                    }
-                    div.jc-CommentList {
-                        color: #d1d5db;
-                        padding-top:10px;
-                    }
-                  </style>
-            </slot>
+              <script src="https://giscus.app/client.js"
+                    data-repo="TrevorCunagin/astrowebsite"
+                    data-repo-id="R_kgDONk23ZA"
+                    data-category="Blog Comments"
+                    data-category-id="DIC_kwDONk23ZM4Cl6y9"
+                    data-mapping="url"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="dark_tritanopia"
+                    data-lang="en"
+                    data-loading="lazy"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            <br>
         
 
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
