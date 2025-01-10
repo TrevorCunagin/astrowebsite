@@ -129,8 +129,8 @@ const jsonLd = {
 
             <SocialShare
                 buttons={BUTTONS}
-                description="Description of the page/post"
-                title="Page Title"
+                description={entry.data.description}
+                title={entry.data.title}
             />
             <slot name="astro-social-share-css">
                 <style is:global>
