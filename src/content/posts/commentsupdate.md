@@ -11,7 +11,7 @@ lang: ''
 
 I've updated the site to add the ability to share blog posts on various social media sites and give comments.
 
-The social media share functionality is an Astro integration called astro-social-share that you can find here [here](https://astro-social-share.mckerlie.com/).
+The social media share functionality is an Astro integration called astro-social-share that you can find [here](https://astro-social-share.mckerlie.com/).
 
 The comment system is called [giscus](https://giscus.app/) and while it does require a GitHub account to comment, it was by far the easiest way to implement comments and is completely free. It even includes reactions if you would like to laugh react and give me a bad day.
 
