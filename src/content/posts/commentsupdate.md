@@ -1,7 +1,7 @@
 ---
 title: Comments and Share Links Update
 published: 2025-01-10
-description: 'Site update adding comments, social media share, and RSS'
+description: 'Site update adding comments, social media share, and RSS.'
 image: ''
 tags: [Updates]
 category: 'Site Updates'
